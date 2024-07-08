@@ -17,7 +17,7 @@ export class SnakeNamingStrategy
     return (
       snakeCase(embeddedPrefixes.concat('').join('_')) +
       (customName ? customName : snakeCase(propertyName))
-    );
+    ).toUpperCase();
   }
 
   relationName(propertyName: string): string {

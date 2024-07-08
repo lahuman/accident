@@ -38,6 +38,6 @@ export class CarAccident {
   @Column()
   longitude: number;
 
-  @CreateDateColumn({ type: "timestamp", default: () => "CURRENT_TIMESTAMP(6)" })
+  @CreateDateColumn()
   regDtm: Date;
 }

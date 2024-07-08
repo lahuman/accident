@@ -1,4 +1,4 @@
-import { Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Get, Post } from '@nestjs/common';
 import { AppService } from './app.service';
 import { CreateAccidentDto } from './dto/accident.dto';
 
@@ -7,8 +7,8 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Post("/accident")
-  async save(req: CreateAccidentDto) {
-    this.appService.saveAccident(req);
+  async save(@Body() accidentDto: CreateAccidentDto ) {
+    await this.appService.saveAccident(accidentDto);
   }
   
   @Get()

@@ -8,10 +8,15 @@ export class CreateAccidentDto {
     accelerometer: string;
     @IsNotEmpty()
     gyroscope: string;
+    @IsNotEmpty()
     speed: number;
+    @IsNotEmpty()
     acceleration: number;
+    @IsNotEmpty()
     rotationRate: number;
+    @IsNotEmpty()
     latitude: number;
+    @IsNotEmpty()
     longitude: number;
   
 }

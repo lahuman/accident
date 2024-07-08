@@ -12,7 +12,8 @@ export class AppService {
   ) {}
 
   async saveAccident(accident: CreateAccidentDto): Promise<void> {
-    await this.repository.save(new CarAccident({ ...accident }));
+    const entity =  new CarAccident({ ...accident, regDtm: new Date() });
+    await this.repository.save(entity);
   }
 
   getHello(): string {
