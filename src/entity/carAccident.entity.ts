@@ -41,6 +41,16 @@ export class CarAccident {
   @Column()
   longitude: number;
 
+  @Column()
+  accelerationThreshold: number;
+
+  @Column()
+  rotationRateThreshold: number;
+
+  @Column()
+  speedThreshold: number;
+
+
   @CreateDateColumn()
   regDtm: Date;
 }

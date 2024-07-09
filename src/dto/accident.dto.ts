@@ -20,5 +20,11 @@ export class CreateAccidentDto {
     latitude: number;
     @IsNotEmpty()
     longitude: number;
-  
+    @IsNotEmpty()
+    accelerationThreshold: number;
+    @IsNotEmpty()
+    rotationRateThreshold: number;
+    @IsNotEmpty()
+    speedThreshold: number;
+
 }
