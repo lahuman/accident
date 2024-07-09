@@ -9,12 +9,16 @@ export class AppController {
     private readonly config: ConfigService
   ) { }
 
+
+  private isAuthorization(token){
+    return `Bearer ${this.config.get("TOKEN")}` !== token
+  }
+  
   @Post("/accident")
   async save(@Headers("Authorization") token: String,
     @Body() accidentDto: CreateAccidentDto) {
 
-
-      if(`Bearer ${this.config.get("TOKEN")}` !== token) {
+      if(this.isAuthorization(token)) {
         return {status: "FAIL", message: "Not Authorization Request!"}
       }
 
