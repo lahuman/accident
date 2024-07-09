@@ -9,6 +9,8 @@ export class CreateAccidentDto {
     @IsNotEmpty()
     gyroscope: string;
     @IsNotEmpty()
+    osInfo: string;
+    @IsNotEmpty()
     speed: number;
     @IsNotEmpty()
     acceleration: number;

@@ -24,6 +24,9 @@ export class CarAccident {
   gyroscope: string;
 
   @Column()
+  osInfo: string;
+
+  @Column()
   speed: number;
 
   @Column()
