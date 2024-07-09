@@ -28,9 +28,9 @@ export class AppController {
       return { status: "FAIL", message: e.message }
     }
     return { status: "OK" }
-
-
   }
+
+  //TODO : 이름 & 날짜 (옵션) 보다 크다 로 조회 하는 METHOD 생성
 
   @Get()
   getHello(): string {
