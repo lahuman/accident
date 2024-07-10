@@ -50,6 +50,9 @@ export class CarAccident {
   @Column()
   speedThreshold: number;
 
+  @Column()
+  status: string;
+
 
   @CreateDateColumn()
   regDtm: Date;

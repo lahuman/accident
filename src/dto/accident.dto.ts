@@ -26,5 +26,7 @@ export class CreateAccidentDto {
     rotationRateThreshold: number;
     @IsNotEmpty()
     speedThreshold: number;
+    @IsNotEmpty()
+    status: string;
 
 }
