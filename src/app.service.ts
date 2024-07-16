@@ -31,7 +31,7 @@ export class AppService {
     }
   
     const accidents = await queryBuilder.getMany();
-    
+    console.log(accidents)
     return accidents;
   }
 

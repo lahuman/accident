@@ -26,28 +26,28 @@ export class CarAccident {
   @Column()
   osInfo: string;
 
-  @Column()
+  @Column('decimal', { precision: 38, scale: 0 })
   speed: number;
 
-  @Column()
+  @Column('decimal', { precision: 38, scale: 0 })
   acceleration: number;
 
-  @Column()
+  @Column('decimal', { precision: 38, scale: 0 })
   rotationRate: number;
 
-  @Column()
+  @Column('decimal', { precision: 38, scale: 0 })
   latitude: number;
 
-  @Column()
+  @Column('decimal', { precision: 38, scale: 0 })
   longitude: number;
 
-  @Column()
+  @Column('decimal', { precision: 38, scale: 0 })
   accelerationThreshold: number;
 
-  @Column()
+  @Column('decimal', { precision: 38, scale: 0 })
   rotationRateThreshold: number;
 
-  @Column()
+  @Column('decimal', { precision: 38, scale: 0 })
   speedThreshold: number;
 
   @Column()
