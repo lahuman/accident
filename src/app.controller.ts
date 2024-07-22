@@ -3,6 +3,7 @@ import { AppService } from './app.service';
 import { CreateAccidentDto } from './dto/accident.dto';
 import { ConfigService } from '@nestjs/config';
 import { SearchDto } from './dto/search.dto';
+import { Threshlod } from './dto/threshold';
 
 @Controller()
 export class AppController {
@@ -48,6 +49,16 @@ export class AppController {
       return { status: "FAIL", message: e.message }
     }
 
+  }
+
+
+  @Get("/accdent/threshlod")
+  getThreshlod(): Threshlod {
+    // accelerationThreshold: number;
+    // rotationRateThreshold: number;
+    // speedThreshold: number;
+    // timeThreshlod: number;
+    return new Threshlod(1.5,2, 20, 10) 
   }
 
   @Get()
