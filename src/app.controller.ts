@@ -57,7 +57,7 @@ export class AppController {
     // accelerationThreshold: number;
     // rotationRateThreshold: number;
     // speedThreshold: number;
-    // timeThreshlod: number;
+    // timeThreshold: number;
     return new Threshlod(1.5,2, 20, 10) 
   }
 
