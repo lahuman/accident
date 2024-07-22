@@ -52,7 +52,7 @@ export class AppController {
   }
 
 
-  @Get("/accident/threshlod")
+  @Get("/accident/threshold")
   getThreshlod(): Threshlod {
     // accelerationThreshold: number;
     // rotationRateThreshold: number;
